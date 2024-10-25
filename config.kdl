@@ -274,6 +274,10 @@ binds {
 
     Mod+Shift+X { spawn "swaylock" "--color" "000000"; }
 
+    // Screen brightness keys
+    XF86MonBrightnessUp { spawn "brightnessctl" "s" "10%+";}
+    XF86MonBrightnessDown { spawn "brightnessctl" "s" "10%-";}
+
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
     // Mod+T { spawn "bash" "-c" "notify-send hello && exec alacritty"; }
